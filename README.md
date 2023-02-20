@@ -43,7 +43,9 @@ yarn add @types/react-router-dom -D
     </BrowserRouter>
 </React.StrictMode>
 ```
-- 新建一个test页面，然后添加到routes
+- 新建一个test页面，然后在Apptsx页面中去添加routes
 ```
-
+<Routes>
+    <Route path="/test" element={<Test />} />
+</Routes>
 ```

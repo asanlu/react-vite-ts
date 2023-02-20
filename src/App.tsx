@@ -10,6 +10,11 @@ function App() {
 
   return (
     <div className="App">
+      {/* 添加routes */}
+      <Routes>
+        <Route path="/yi" element={<Yi />} />
+        <Route path="/test" element={<Test />} />
+      </Routes>
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src="/vite.svg" className="logo" alt="Vite logo" />
@@ -30,11 +35,6 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
-      {/* 添加routes */}
-      <Routes>
-        <Route path="about" element={<Yi />} />
-        <Route path="/test" element={<Test />} />
-      </Routes>
     </div>
   );
 }
