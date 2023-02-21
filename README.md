@@ -49,3 +49,12 @@ yarn add @types/react-router-dom -D
     <Route path="/test" element={<Test />} />
 </Routes>
 ```
+- 安装`sass`依赖，css文件以`x.module.scss`命名即可(less同理)，见[vite css中](https://cn.vitejs.dev/guide/features.html#css)
+```
+yarn add -D sass 
+
+import styles from "./yi.module.scss";
+<div className={styles.t}> 
+  导入使用
+</div>
+```

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import "./App.css";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, Link } from "react-router-dom";
 import Test from "@/pages/test";
 import Yi from "@/pages/yi";
 
@@ -15,6 +15,11 @@ function App() {
         <Route path="/yi" element={<Yi />} />
         <Route path="/test" element={<Test />} />
       </Routes>
+      <div>
+        <Link to={'yi'}>去yi页面</Link>
+        <br/>
+        <Link to={'test'}>去test页面</Link>
+      </div>
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src="/vite.svg" className="logo" alt="Vite logo" />
